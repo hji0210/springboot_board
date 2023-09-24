@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+   
+  
+ <mapper namespace="kr.co.app.controller.dao.IBoardDao">
+   
+<select id="list" resultType="kr.co.app.controller.dto.BoardDto">
+   select * from board order by board_date desc
+</select>
+<insert id="write" parameterType="kr.co.app.controller.dto.BoardDto">
+   INSERT INTO board (board_name, board_title, board_content, board_date)
+   VALUES (#{board_name}, #{board_title}, #{board_date}, now())
+</insert>
+
+   
+   
+   
+   </mapper>
+   
+   
+   
+   
+  
