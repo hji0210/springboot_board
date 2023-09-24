@@ -11,4 +11,6 @@ import kr.co.app.controller.dto.BoardDto;
 public interface IBoardDao {
   public List<BoardDto> list();
   public int write(BoardDto dto);
+  public BoardDto viewDto(String board_idx);
+  public int deleteDto(String board_idx);
 }

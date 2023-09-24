@@ -31,20 +31,18 @@
          
          </td>
     </tr>
-    
     <tr>
-        <td colspan="2">
-          &nbsp;&nbsp;<input type="submit" value="글쓰기">&nbsp;&nbsp;
-          <a href="listForm"><input type="button" value="목록보기"></a>
-        </td>
-         <td></td>
+        <td>첨부 파일</td>
+        <td><input type="file" name="fileToUpload"></td>
     </tr>
-    
-    
-    
-    
+    <tr>
+    	<td colspan="2">
+		    <input type="submit" value="글쓰기">
+		    <a href="listForm"><input type="button" value="취소"></a>
+		    <a href="listForm"><input type="button" value="목록보기"></a>
+		</td>
+    </tr>
     </table>
-    
     </form>
 </body>
 </html>
